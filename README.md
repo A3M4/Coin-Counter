@@ -1,5 +1,4 @@
-# Coin-Counter-based-on-TensorFlow-Object-Detection-AP
-A step-by-step tutorial showing how to build a coin counter based on TensorFlow Object Detection API
+# Coin-Counter-based-on-TensorFlow-Object-Detection-API-Tutorial
 TensorFlow’s Object Detection API gives access to anyone who wants to quickly create a image/video recognition software. I will be building a coin counter to detect if there is a coin in the image and calculate the total amount of money simultaneously. The following pictures show the prototype's results, and future improvements of this project will be discussed in the end of this article.
 
 <img src="https://i.ibb.co/wwgYtX7/35028879540694746.jpg" alt="avatar" style="zoom: 200%;" />
