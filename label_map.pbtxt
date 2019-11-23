@@ -1,0 +1,11 @@
+item {
+  id: 1
+  name: 'Toonie'
+  display_name: 'Toonie'
+}
+item {
+  id: 2
+  name: 'Loonie'
+  display_name: 'Loonie'
+}
+
