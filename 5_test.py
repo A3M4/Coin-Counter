@@ -85,34 +85,34 @@ def main():
                                                                    line_thickness=8)
                 coin = [category_index.get(value) for index, value in enumerate(classes[0]) if scores[0, index] > 0.75]
                 print(coin)
-                # ToonieCount = []
-                # LoonieCount = []
-                #
-                # for i in range(0, int(len(coin))):
-                #     if str(coin[i]['name']) == "Toonie":
-                #         ToonieCount.append("t")
-                #     else:
-                #         LoonieCount.append("l")
-                #
-                # # Singular & Plural
-                # toonie = " Toonies"
-                # loonie = " Loonies"
-                # if len(ToonieCount) <= 1:
-                #     toonie = " Toonie"
-                # if len(LoonieCount) <= 1:
-                #     loonie = " Loonie"
-                #
-                # # Add text to image
-                # text = "You have " + str(len(ToonieCount)) + toonie + " and " + str(len(LoonieCount)) + loonie \
-                #        +", " + str(len(ToonieCount)+len(ToonieCount)+len(LoonieCount)) + " Bucks in Total."
-                #
-                # cv2.putText(img=Image_Coin_Counter, text=text, org=(10, 50),
-                #             fontFace=cv2.FONT_HERSHEY_DUPLEX, fontScale=1.1, color=[0, 0, 0], lineType=4,
-                #             thickness=8)
-                # cv2.putText(img=Image_Coin_Counter, text=text, org=(10, 50),
-                #             fontFace=cv2.FONT_HERSHEY_DUPLEX, fontScale=1.1, color=[255, 255, 255], lineType=4,
-                #             thickness=2)
-                # cv2.imwrite(TEST_IMAGE_DIR + r'/' + str(random.random())[2:] + r'.jpg', Image_Coin_Counter)
+                ToonieCount = []
+                LoonieCount = []
+                
+                for i in range(0, int(len(coin))):
+                    if str(coin[i]['name']) == "Toonie":
+                        ToonieCount.append("t")
+                    else:
+                        LoonieCount.append("l")
+                
+                # Singular & Plural
+                toonie = " Toonies"
+                loonie = " Loonies"
+                if len(ToonieCount) <= 1:
+                    toonie = " Toonie"
+                if len(LoonieCount) <= 1:
+                    loonie = " Loonie"
+                
+                # Add text to image
+                text = "You have " + str(len(ToonieCount)) + toonie + " and " + str(len(LoonieCount)) + loonie \
+                       +", " + str(len(ToonieCount)+len(ToonieCount)+len(LoonieCount)) + " Bucks in Total."
+                
+                cv2.putText(img=Image_Coin_Counter, text=text, org=(10, 50),
+                            fontFace=cv2.FONT_HERSHEY_DUPLEX, fontScale=1.1, color=[0, 0, 0], lineType=4,
+                            thickness=8)
+                cv2.putText(img=Image_Coin_Counter, text=text, org=(10, 50),
+                            fontFace=cv2.FONT_HERSHEY_DUPLEX, fontScale=1.1, color=[255, 255, 255], lineType=4,
+                            thickness=2)
+                cv2.imwrite(TEST_IMAGE_DIR + r'/' + str(random.random())[2:] + r'.jpg', Image_Coin_Counter)
 
 if __name__ == "__main__":
     main()
